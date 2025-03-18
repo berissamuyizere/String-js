@@ -15,3 +15,32 @@ let findAre = string1.includes("are");
 let findSitting = string2.includes("sitting");
 console.log(`"are" found: ${findAre}`); 
 console.log(`"sitting" found: ${findSitting}`);
+
+// Convert strings into specified formats
+// Convert to uppercase
+let upperCaseWord = "wonderful".toUpperCase();
+console.log(upperCaseWord); 
+
+// Convert to lowercase
+const lowerCase1 = "amazing".toLowerCase();
+const lowerCase2 = "UndERneath".toLowerCase();
+console.log(lowerCase1, lowerCase2); 
+
+// Convert to title case
+const titleCase = "A wonderful world"
+  .split(" ")
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+  .join(" ");
+console.log(titleCase); 
+
+let story = "The quick brown fox jumps over the lazy dog";
+const words = story.toLowerCase().split(" ");
+
+let countThe = 0;
+let countBrown = 0;
+for (let word of words) {
+    if (word === "the") countThe++;
+    if (word === "brown") countBrown++;
+}
+console.log(`"the" appears: ${countThe} times`); 
+console.log(`"brown" appears: ${countBrown} times`); 
