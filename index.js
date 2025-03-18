@@ -16,23 +16,25 @@ let findSitting = string2.includes("sitting");
 console.log(`"are" found: ${findAre}`); 
 console.log(`"sitting" found: ${findSitting}`);
 
-// Convert strings into specified formats
+//Convert the following strings into the specified format:1. UpperCase: "wonderful"2. LowerCase: "amazing", "UndERneath"3. Title case "A wonderful world"
+
 // Convert to uppercase
 let upperCaseWord = "wonderful".toUpperCase();
 console.log(upperCaseWord); 
 
-// Convert to lowercase
+// Converting to lowercase
 const lowerCase1 = "amazing".toLowerCase();
 const lowerCase2 = "UndERneath".toLowerCase();
 console.log(lowerCase1, lowerCase2); 
 
-// Convert to title case
+// Converting to title case
 const titleCase = "A wonderful world"
   .split(" ")
   .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
   .join(" ");
 console.log(titleCase); 
 
+//Count how many times the following string appears in the string variable:1. "the"2."brown"const story= "The quick brown fox jumps over the lazy dog"
 let story = "The quick brown fox jumps over the lazy dog";
 const words = story.toLowerCase().split(" ");
 
